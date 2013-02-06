@@ -1,0 +1,5 @@
+C:\Users\pko\Documents\Visual Studio 2012\Projects\LAB\WatchPosition\bin\WatchPosition.dll
+C:\Users\pko\Documents\Visual Studio 2012\Projects\LAB\WatchPosition\bin\WatchPosition.pdb
+C:\Users\pko\Documents\Visual Studio 2012\Projects\LAB\WatchPosition\obj\Debug\Geolocation.csprojResolveAssemblyReference.cache
+C:\Users\pko\Documents\Visual Studio 2012\Projects\LAB\WatchPosition\obj\Debug\WatchPosition.dll
+C:\Users\pko\Documents\Visual Studio 2012\Projects\LAB\WatchPosition\obj\Debug\WatchPosition.pdb
