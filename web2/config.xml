@@ -14,7 +14,10 @@
     <author href="http://webase.sk" email="pko@dflexnr.sk">
         Peter Kotry
     </author>
- 
+    
+  <preference name="phonegap-version" value="2.3.0" />
+  <preference name="exit-on-suspend" value="true" />
+
     <feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>

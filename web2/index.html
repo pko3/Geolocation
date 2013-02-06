@@ -62,7 +62,7 @@
             }
         </style>
     </head>
-    <body>
+    <body onload="app.initialize()">
         <header><h1>Geolocation</h1></header>
         <div id="message">Waiting ...</div>
         <div id="mapDiv"></div>
@@ -75,12 +75,12 @@
                 marker: null,
                 map: null,
                 initialize: function () {
-                    this.bindEvents();
-                },
-                bindEvents: function () {
-                    document.addEventListener('deviceready', app.onDeviceReady, false);
-                },
-                onDeviceReady: function () {
+                //    this.bindEvents();
+                //},
+                //bindEvents: function () {
+                //    document.addEventListener('deviceready', app.onDeviceReady, false);
+                //},
+                //onDeviceReady: function () {
                     app.message("Device Ready, waiting watch position ...");
                     app.watchID = navigator.geolocation.watchPosition(app.success, app.error, { frequency: 3000 });
                 },
@@ -123,9 +123,7 @@
                         app.map.setCenter(point);
                     }
                 },
-
             };
-            app.initialize();
             </script>
     </body>
 </html>
