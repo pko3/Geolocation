@@ -44,7 +44,6 @@
             }
             #out
             {
-
                 padding:5px;
                 position:absolute;
                 bottom:5px;
@@ -83,7 +82,7 @@
                 //onDeviceReady: function () {
                     app.message("Waiting watch position ...");
                     try{
-                        app.watchID = navigator.geolocation.watchPosition(app.success, app.error, { frequency: 3000 });
+                        app.watchID = navigator.geolocation.watchPosition(app.success, app.error, { frequency: 2000 });
                     }
                     catch (err) {
                         app.message("Error: " + err.message, true);
@@ -99,7 +98,7 @@
                     //'Accuracy: ' + position.coords.accuracy + '<br />' +
                     //'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '<br />' +
                     //'Heading: ' + position.coords.heading + '<br />' +
-                    'Speed: ' + position.coords.speed + ' m/s<br />';// +
+                    'Speed: ' + Math.ceil(position.coords.speed * 3.6) + ' km/h<br />';// +
                     //'Timestamp: ' + new Date(position.timestamp) + '<br />';
                     app.setMap(position);
                 },
@@ -126,6 +125,9 @@
                                 title: "You are here"
                             });
                         }
+                        //if (position.coords.speed > 0)
+                        //    app.marker.setOptions({path:google.maps.SymbolPath.BACKWARD_CLOSED_ARROW});
+                            
                         app.marker.setPosition(point);
                         app.map.setCenter(point);
                     }
