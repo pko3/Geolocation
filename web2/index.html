@@ -81,7 +81,7 @@
                 //    document.addEventListener('deviceready', app.onDeviceReady, false);
                 //},
                 //onDeviceReady: function () {
-                    app.message("Device Ready, waiting watch position ...");
+                    app.message("Waiting watch position ...");
                     app.watchID = navigator.geolocation.watchPosition(app.success, app.error, { frequency: 3000 });
                 },
                 success: function (position) {
